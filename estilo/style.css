@@ -28,37 +28,37 @@ header{
     color: black;
     font-weight: bolder;
 }
-#primeiroBotao{
+#w{
     background-image: url("../images/tom1.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#segundoBotao{
+#a{
     background-image: url("../images/tom2.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#terceiroBotao{
+#s{
     background-image: url("../images/tom3.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#quartoBotao{
+#d{
     background-image: url("../images/tom4.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#quintoBotao{
+#j{
     background-image: url("../images/snare.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#sextoBotao{
+#k{
     background-image: url("../images/crash.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-#setimoBotao{
+#l{
     background-image: url("../images/kick.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -67,4 +67,8 @@ footer{
     text-align: center;
     color: white;
     margin-top: 200px;
+}
+.pressionado{
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
 }

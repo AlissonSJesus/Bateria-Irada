@@ -2,18 +2,28 @@ var list = document.querySelectorAll("button.command");
 var i = 0;
 
 while(i < list.length){
-    list[i].addEventListener("click", tocar);
+    list[i].addEventListener("click", function(event){
+        var buttonInnerHTML = this.innerHTML;
+        fazendoBarulho(buttonInnerHTML);
+
+        fazendoBrilhar(buttonInnerHTML);
+    });
     i++;
 }
 
 document.addEventListener("keydown", function(event){
     var press = event.key
-    fazendoBarulho(press)
+    fazendoBarulho(press);
+    fazendoBrilhar(press);
 })
 
-function tocar(){
-    var buttonInnerHTML = this.innerHTML;
-    fazendoBarulho(buttonInnerHTML);
+function fazendoBrilhar(a){
+    var addClasse = document.getElementById(a);
+    addClasse.classList.add("pressionado");
+
+    setTimeout(function(){
+        addClasse.classList.remove("pressionado");
+    }, 100);
 }
 
 function fazendoBarulho(a){
